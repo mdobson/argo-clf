@@ -1,0 +1,26 @@
+{
+  "name": "argo-clf",
+  "version": "0.0.2",
+  "description": "Argo logging using CLF",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mdobson/argo-clf"
+  },
+  "keywords": [
+    "argo",
+    "clf",
+    "common",
+    "log",
+    "format",
+    "logs"
+  ],
+  "author": "Matt Dobson <mdobson4@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mdobson/argo-clf/issues"
+  }
+}
