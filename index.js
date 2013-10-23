@@ -1,15 +1,16 @@
+var Stream = require('stream');
 
 module.exports = function(handle) {
-  handle("response", { affinity: 'sink' }, function(env, next) {
+  handle('response', { affinity: 'sink' }, function(env, next) {
     if (env.request) {
       var req = env.request;
       var res = env.response || env.target.response;
-      var UNKNOWN = "-";
+      var UNKNOWN = '-';
       var ip = req.connection.remoteAddress;
       var date = '[' + new Date().toUTCString() + ']';
       var method = req.method;
       var url = req.url;
-      var requestSummary = '\"' + method + ' ' + url + '\"';
+      var requestSummary = '\'' + method + ' ' + url + '\'';
       var status = res.statusCode;
       var length = 0;
       
@@ -19,7 +20,7 @@ module.exports = function(handle) {
           var buf = new Buffer(body);
           length = buf.length;
         } else if (body instanceof Stream) {
-          length = "-";
+          length = UNKNOWN;
         } else if (body instanceof Buffer) {
           length = body.length;
         } else if (typeof body === 'object') {
