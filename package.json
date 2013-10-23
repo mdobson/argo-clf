@@ -1,6 +1,6 @@
 {
   "name": "argo-clf",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Argo logging using CLF",
   "main": "index.js",
   "scripts": {
