@@ -1,1 +1,5 @@
-node_moules
+*.swo
+*.swp
+.DS_Store
+node_modules
+.tern-port

@@ -1,4 +1,5 @@
 var Stream = require('stream');
+var moment = require('moment');
 
 module.exports = function(handle) {
   handle('response', { affinity: 'sink' }, function(env, next) {
@@ -7,7 +8,7 @@ module.exports = function(handle) {
       var res = env.response || env.target.response;
       var UNKNOWN = '-';
       var ip = req.connection.remoteAddress;
-      var date = '[' + new Date().toUTCString() + ']';
+      var date = '[' + moment(Date.now()).format('D/MMM/YYYY:HH:mm:ss ZZ') + ']';
       var method = req.method;
       var url = req.url;
       var requestSummary = '\'' + method + ' ' + url + '\'';
