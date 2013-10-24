@@ -22,5 +22,8 @@
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/mdobson/argo-clf/issues"
+  },
+  "dependencies": {
+    "moment": "~2.3.1"
   }
 }
