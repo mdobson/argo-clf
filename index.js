@@ -10,7 +10,7 @@ module.exports = function(handle) {
       var date = '[' + new Date().toUTCString() + ']';
       var method = req.method;
       var url = req.url;
-      var requestSummary = '\'' + method + ' ' + url + '\'';
+      var requestSummary = '"' + method + ' ' + url + '"';
       var status = res.statusCode;
       var length = 0;
       
