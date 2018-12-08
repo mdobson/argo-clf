@@ -8,5 +8,5 @@ Usage:
   argo()
     .use(clf)
     .target("SOME URL")
-    .list(3000)
+    .listen(3000)
 ```
