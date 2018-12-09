@@ -1,1 +1,1 @@
-#DEPRECATED - THIS REPO HAS BEEN MOVED TO https://github.com/argo/argo-clf
+DEPRECATED - THIS REPO HAS BEEN MOVED TO https://github.com/argo/argo-clf
