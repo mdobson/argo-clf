@@ -4,7 +4,7 @@
   "description": "Argo logging using CLF",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/.bin/mocha test/"
   },
   "repository": {
     "type": "git",
@@ -24,6 +24,9 @@
     "url": "https://github.com/mdobson/argo-clf/issues"
   },
   "dependencies": {
-    "moment": "~2.3.1"
+  },
+  "devDependencies": {
+    "mocha": "^5.2.0",
+    "moment": "^2.3.1"
   }
 }
