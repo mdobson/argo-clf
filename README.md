@@ -1,12 +1,1 @@
-##Argo Common Log Formatter
-
-Just a logger! Just spits logs to STDOUT for the time being.
-
-Usage:
-```javascript
-  var clf = require('argo-clf');
-  argo()
-    .use(clf)
-    .target("SOME URL")
-    .listen(3000)
-```
+#DEPRECATED - THIS REPO HAS BEEN MOVED TO https://github.com/argo/argo-clf
